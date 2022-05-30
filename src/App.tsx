@@ -2,9 +2,17 @@ import Card from './Components/Card/Card';
 import Header from './Sections/Header';
 import Footer from './Sections/Footer';
 
+
+const appStyle = {
+  addingTop: '50px',
+  paddingRight: '15%',
+  paddingBottom: '50px',
+  paddingLeft: '15%',
+}
+
 const App = () => (
-  <div className="App">
-    <header className="App-header">
+  <div style={appStyle}>
+    <header>
       <Header />
       <table>
         <tr>

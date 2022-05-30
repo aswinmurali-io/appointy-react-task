@@ -9,4 +9,15 @@ body {
 
 th {
     color: black;
+    font-weight: 700;
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+    color: grey;
+}
+
+table {
+    margin: auto;
 }

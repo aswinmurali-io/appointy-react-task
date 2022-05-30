@@ -1,16 +1,21 @@
-const style = {
+const headingStyle = {
   color: 'black',
+  fontSize: '17px',
 }
+
+const Divider = () => (
+  <div style={{
+    margin: '48px 0',
+    height: '1px',
+    background: 'rgba(0,0,0,.1)',
+  }} />
+)
 
 const Footer = () => (
   <div>
-    <div style={{
-      margin: '48px 0',
-      height: '1px',
-      background: 'rgba(0,0,0,.1)',
-    }} />
-    <table>
-      <tr style={style}>
+    <Divider />
+    <table width={'70%'}>
+      <tr style={headingStyle}>
         <th>Company</th>
         <th>Features</th>
         <th>Resource</th>
@@ -23,7 +28,7 @@ const Footer = () => (
           <tr>Contact us</tr>
           <tr>Locations</tr>
         </td>
-        <td>
+        <td >
           <tr>Cool stuff</tr>
           <tr>Random feature</tr>
           <tr>Team feature</tr>
