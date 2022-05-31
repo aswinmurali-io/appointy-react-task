@@ -6,12 +6,14 @@ type CardType = {
     description: string,
     pricing: number,
     points: string[],
+    isFocus: boolean,
     buttonText: string,
 }
 
 const Card = ({
     heading,
     icon,
+    isFocus,
     description,
     pricing,
     points,
@@ -36,7 +38,7 @@ const Card = ({
                     {description}
                 </tr>
             </tr>
-            
+
             <tr className='price'>
                 <div className='value'>${pricing}</div>
                 <div className='suffix'>/mo</div>
@@ -46,10 +48,14 @@ const Card = ({
             </tr>
             <tr></tr>
             <tr>
-                <div className='button'>{buttonText}</div>
+                {
+                    isFocus ?
+                        <div className='button focus'>{buttonText}</div> :
+                        <div className='button'>{buttonText}</div>
+                }
             </tr>
         </table>
-    </div >
+    </div>
 )
 
 export default Card;

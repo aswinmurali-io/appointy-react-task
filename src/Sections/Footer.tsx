@@ -14,7 +14,7 @@ const Footer = () => (
         <th>Resource</th>
         <th>Legal</th>
       </tr>
-      <tr>
+      <tr className='content'>
         <td>
           <tr>Team</tr>
           <tr>History</tr>

@@ -20,6 +20,10 @@
     font-size: '17px';
 }
 
+.footer .content tr {
+    font-size: 13px;
+}
+
 .divider {
     margin: 48px 0;
     height: 1px;

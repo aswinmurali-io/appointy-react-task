@@ -72,3 +72,8 @@ div.card {
     width: 90px;
     margin: 8px;
 }
+
+.card .button.focus {
+    color: white;
+    background-color: #3376cb;
+}

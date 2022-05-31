@@ -18,6 +18,7 @@ const App = () => (
               icon={'x'}
               description=''
               pricing={0}
+              isFocus={false}
               buttonText='SIGN UP FOR FREE'
               points={[
                 '10 users included',
@@ -33,6 +34,7 @@ const App = () => (
               icon={'x'}
               description='Most Popular'
               pricing={15}
+              isFocus={true}
               buttonText='GET STARTED'
               points={[
                 '20 users included',
@@ -48,6 +50,7 @@ const App = () => (
               icon={'x'}
               description=''
               pricing={30}
+              isFocus={false}
               buttonText='CONTACT US'
               points={[
                 '50 users included',
