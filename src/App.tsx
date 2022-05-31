@@ -8,9 +8,8 @@ const App = () => (
     <header>
       <Header />
       <table className='cardsview' style={{
-        width: '100%',
-        padding: '0px 65px',
-        verticalAlign: 'bottom'
+        verticalAlign: 'bottom',
+        margin: '0 auto',
       }}>
           <th>
             <Card
