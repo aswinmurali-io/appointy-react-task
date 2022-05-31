@@ -1,28 +1,23 @@
 import Card from './Components/Card/Card';
+
 import Header from './Sections/Header';
 import Footer from './Sections/Footer';
 
-
-const appStyle = {
-  addingTop: '50px',
-  paddingRight: '15%',
-  paddingBottom: '50px',
-  paddingLeft: '15%',
-}
-
 const App = () => (
-  <div style={appStyle}>
+  <div className='app'>
     <header>
       <Header />
-      <table>
-        <tr>
+      <table className='cardsview' style={{
+        width: '100%',
+        padding: '0px 65px',
+        verticalAlign: 'bottom'
+      }}>
           <th>
             <Card
               heading='Free'
               icon={'x'}
-              description='sd'
+              description=''
               pricing={0}
-              isSelected={false}
               buttonText='SIGN UP FOR FREE'
               points={[
                 '10 users included',
@@ -32,13 +27,38 @@ const App = () => (
               ]}
             />
           </th>
-          {/* <th>
-            <Card title='Pro' description='sd4' />
+          <th>
+            <Card
+              heading='Pro'
+              icon={'x'}
+              description='Most Popular'
+              pricing={15}
+              buttonText='GET STARTED'
+              points={[
+                '20 users included',
+                '10 GB of storage',
+                'Help center access',
+                'Priority Email support',
+              ]}
+            />
           </th>
           <th>
-            <Card title='Enterprise' description='sd5' />
-          </th> */}
-        </tr>
+            <Card
+              heading='Enterprise'
+              icon={'x'}
+              description=''
+              pricing={30}
+              buttonText='CONTACT US'
+              points={[
+                '50 users included',
+                '30 GB of storage',
+                'Help center access',
+                'Photo & email support',
+              ]}
+            />
+          </th>
+
+        
       </table>
       <Footer />
     </header>

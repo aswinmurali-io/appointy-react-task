@@ -2,6 +2,8 @@ div.card {
     border: 2px solid #eeeeee;
     border-radius: 5px;
     text-align: center;
+    margin: 10px;
+    max-width: 200px;
 }
 
 .card tr {
@@ -11,14 +13,15 @@ div.card {
 
 .card table {
     margin: -2px;
+    max-width: 190px;
 }
 
 .card .heading {
-    background: #eeeeee;
+    display: inline;
 }
 
 .card .heading .title {
-    padding: 2px 80px;
+    padding: 2px;
     font-weight: normal;
     color: black;
     text-align: center;
@@ -30,10 +33,27 @@ div.card {
     color: black;
 }
 
+.card .price {
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+}
+
+.card .price .value {
+    font-size: 30px;
+}
+
+.card .price .suffix {
+    color: gray;
+    padding-top: 15px;
+}
+
 .card .description {
     color: gray;
     font-size: 12px;
-    padding: 2px 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .card .points p {
@@ -49,5 +69,6 @@ div.card {
     font-size: 10px;
     font-weight: bold;
     padding: 5px 45px;
+    width: 90px;
     margin: 8px;
 }

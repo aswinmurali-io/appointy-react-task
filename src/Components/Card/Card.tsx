@@ -6,7 +6,6 @@ type CardType = {
     description: string,
     pricing: number,
     points: string[],
-    isSelected: boolean,
     buttonText: string,
 }
 
@@ -16,25 +15,31 @@ const Card = ({
     description,
     pricing,
     points,
-    isSelected,
     buttonText,
 }: CardType) => (
     <div className='card'>
-        <table>
-            <tr className='heading'>
-                <tr>
-                    <td className='title'>{heading}</td>
-                    {/* <th>
-                        
-                        <td className='icon'>{icon}</td>
-                    </th> */}
+        <table style={{
+            display: 'contents',
+            justifyContent: 'center'
+        }}>
+            <tr style={{
+                display: 'block',
+                background: '#eeeeee',
+                padding: '8px 0'
+            }}>
+                <tr className='heading'>
+                    <tr className='title'>{heading}</tr>
+
+                    {/* <th><td className='icon'>{icon}</td></th> */}
                 </tr>
                 <tr className='description'>
                     {description}
                 </tr>
             </tr>
-            <tr>
-                $0/mo
+            
+            <tr className='price'>
+                <div className='value'>${pricing}</div>
+                <div className='suffix'>/mo</div>
             </tr>
             <tr className='points'>
                 {points.map((point) => (<p>{point}</p>))}
@@ -44,7 +49,7 @@ const Card = ({
                 <div className='button'>{buttonText}</div>
             </tr>
         </table>
-    </div>
+    </div >
 )
 
 export default Card;
