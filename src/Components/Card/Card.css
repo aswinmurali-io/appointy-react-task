@@ -4,6 +4,7 @@ div.card {
     text-align: center;
     margin: 10px;
     max-width: 200px;
+    box-shadow: 0 2px 2px -2px #000000;
 }
 
 .card tr {
