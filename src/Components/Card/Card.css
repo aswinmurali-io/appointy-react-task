@@ -1,0 +1,53 @@
+div.card {
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card tr {
+    text-align: center;
+    font-weight: normal;
+}
+
+.card table {
+    margin: -2px;
+}
+
+.card .heading {
+    background: #eeeeee;
+}
+
+.card .heading .title {
+    padding: 2px 80px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+}
+
+.card .heading .icon {
+    text-align: center;
+    font-weight: normal;
+    color: black;
+}
+
+.card .description {
+    color: gray;
+    font-size: 12px;
+    padding: 2px 60px;
+}
+
+.card .points p {
+    font-size: 10px;
+    margin: 5px;
+}
+
+.card .button {
+    border: 1px solid #3376cb;
+    border-radius: 4px;
+    color: #3376cb;
+    background-color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 45px;
+    margin: 8px;
+}

@@ -1,12 +1,49 @@
+import '../Card/card.css'
+
 type CardType = {
-    title: string
-    description: string
+    heading: string,
+    icon: any, // TODO: change this later.
+    description: string,
+    pricing: number,
+    points: string[],
+    isSelected: boolean,
+    buttonText: string,
 }
 
-const Card = ({ title, description }: CardType) => (
-    <div className='top'>
-        <p>{title}</p>
-        <p>{description}</p>
+const Card = ({
+    heading,
+    icon,
+    description,
+    pricing,
+    points,
+    isSelected,
+    buttonText,
+}: CardType) => (
+    <div className='card'>
+        <table>
+            <tr className='heading'>
+                <tr>
+                    <td className='title'>{heading}</td>
+                    {/* <th>
+                        
+                        <td className='icon'>{icon}</td>
+                    </th> */}
+                </tr>
+                <tr className='description'>
+                    {description}
+                </tr>
+            </tr>
+            <tr>
+                $0/mo
+            </tr>
+            <tr className='points'>
+                {points.map((point) => (<p>{point}</p>))}
+            </tr>
+            <tr></tr>
+            <tr>
+                <div className='button'>{buttonText}</div>
+            </tr>
+        </table>
     </div>
 )
 

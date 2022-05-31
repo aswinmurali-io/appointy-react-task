@@ -17,14 +17,27 @@ const App = () => (
       <table>
         <tr>
           <th>
-            <Card title='Hi' description='sd' />
+            <Card
+              heading='Free'
+              icon={'x'}
+              description='sd'
+              pricing={0}
+              isSelected={false}
+              buttonText='SIGN UP FOR FREE'
+              points={[
+                '10 users included',
+                '2 GB of storage',
+                'Help center access',
+                'Email support',
+              ]}
+            />
+          </th>
+          {/* <th>
+            <Card title='Pro' description='sd4' />
           </th>
           <th>
-            <Card title='Hi2' description='sd4' />
-          </th>
-          <th>
-            <Card title='Hi3' description='sd5' />
-          </th>
+            <Card title='Enterprise' description='sd5' />
+          </th> */}
         </tr>
       </table>
       <Footer />

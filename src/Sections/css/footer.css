@@ -1,0 +1,27 @@
+.footer th {
+    color: black;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 8px;
+}
+
+.footer td {
+    vertical-align: top;
+    color: grey;
+}
+
+.footer table {
+    margin: auto;
+    width: 70%;
+}
+
+.footer .heading {
+    color: 'black';
+    font-size: '17px';
+}
+
+.divider {
+    margin: 48px 0;
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+}

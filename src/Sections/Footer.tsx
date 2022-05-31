@@ -1,21 +1,14 @@
-const headingStyle = {
-  color: 'black',
-  fontSize: '17px',
-}
+import '../Sections/css/footer.css'
 
 const Divider = () => (
-  <div style={{
-    margin: '48px 0',
-    height: '1px',
-    background: 'rgba(0,0,0,.1)',
-  }} />
+  <div className='divider' />
 )
 
 const Footer = () => (
-  <div>
+  <div className='footer'>
     <Divider />
-    <table width={'70%'}>
-      <tr style={headingStyle}>
+    <table >
+      <tr className='heading'>
         <th>Company</th>
         <th>Features</th>
         <th>Resource</th>
