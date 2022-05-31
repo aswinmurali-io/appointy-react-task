@@ -8,13 +8,9 @@ body {
 }
 
 .app {
-    adding-top: 50px;
     padding-right: 15%;
     padding-bottom: 50px;
     padding-left: 15%;
-}
-
-.app table {
 }
 
 .cardsview table {

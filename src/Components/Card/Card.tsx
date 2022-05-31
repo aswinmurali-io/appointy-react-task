@@ -24,6 +24,11 @@ const Card = ({
             display: 'contents',
             justifyContent: 'center'
         }}>
+            {isFocus ? <div style={{
+                float: 'right',
+                fontSize: '20px',
+                fontWeight: 'normal'
+            }} className='icon'>☆</div> : <div />}
             <tr style={{
                 display: 'block',
                 background: '#eeeeee',
@@ -32,7 +37,6 @@ const Card = ({
                 <tr className='heading'>
                     <tr className='title'>{heading}</tr>
 
-                    {/* <th><td className='icon'>{icon}</td></th> */}
                 </tr>
                 <tr className='description'>
                     {description}
