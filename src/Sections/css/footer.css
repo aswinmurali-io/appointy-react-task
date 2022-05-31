@@ -12,12 +12,12 @@
 
 .footer table {
     margin: auto;
-    width: 70%;
+    width: 660px;
 }
 
 .footer .heading {
-    color: 'black';
-    font-size: '17px';
+    color: black;
+    font-size: 17px;
 }
 
 .footer .content tr {
