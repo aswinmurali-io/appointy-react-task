@@ -1,4 +1,4 @@
-import '../Card/card.css'
+import '../Card/Card.css'
 
 type CardType = {
     heading: string,
